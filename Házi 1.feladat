@@ -1,0 +1,32 @@
+def main():
+    age = int(input("Kor: "))
+    if age >= 21:
+        print("1. Fogyaszthat legálisan alkoholt Amerikában.")
+    elif age == 20:
+        print('1. Majdnem fogyaszthat legálisan alkoholt Amerikában.')
+    else:
+        print('1. Nem fogyaszthat legálisan alkoholt Amerikában.')
+
+
+    if age >= 18:
+        print("2. Vásárolhat dohányterméket Magyarországon.")
+    elif age == 17:
+        print('2. Majdnem vásárolhat dohányterméket Magyarországon.')
+    else:
+        print('2. Nem vásárolhat dohányterméket Magyarországon.')
+
+
+    if age >= 16:
+            print("3. Szerezhet jogosítványt.")
+    elif age == 15:
+            print('3. Majdnem szerezhet jogosítványt.')
+    else:
+            print('3. Nem szerezhet jogosítványt.')
+
+
+    if age >= 12:
+            print("4. Megnézheti egyedül a Shrek 2-t.")
+    else:
+            print('4. Felnőtt felügyelete mellett ajánlott megnézni a Shrek 2-t.')
+if __name__ == "__main__":
+    main()
