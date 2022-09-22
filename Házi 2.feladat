@@ -1,0 +1,23 @@
+def main():
+    from math import cos
+    from math import sqrt
+
+    a = int(input('Egyik befogó:   '))
+    b = int(input('Másik befogó:   '))
+
+    print('Átfogó: {c}'.format(c=sqrt(a) + sqrt(b)))
+
+    d = int(input('D:   '))
+    e = int(input('E:   '))
+    f = int(input('F:   '))
+
+    print('Másik megoldás: {x2}'.format(x2=(e ** 2 + (e ** 2 - 4 * d * f)) / (2 * d) ** 2))
+    print('Egyik megoldás: {x1}'.format(x1=(-e ** 2 + (e ** 2 - 4 * d * f)) / (2 * d) ** 2))
+
+    a2 = int(input('a=  '))
+    b2 = int(input('b=  '))
+    szog = int(input("γ=  "))
+    print('c= {c2}'.format(c2=a2**2 + b2**2 - (2*a2*b2*(cos(szog)))))
+
+if __name__ == "__main__":
+    main()
