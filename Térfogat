@@ -1,0 +1,12 @@
+def main():
+    r = int(input('Sugár: '))
+    pi = 3.14
+
+    print('A kör területe: {t}'.format(t=pi*r*r))
+
+    a = int(input('A téglalap egyik oldala: '))
+    b = int(input('A téglalap másik oldala: '))
+    print('A téglalap területe: {t2}'.format(t2=a*b))
+    print('A kúp térfogata: {v}'.format(v=b*r*r*pi))
+if __name__ == "__main__":
+    main()
