@@ -1,0 +1,20 @@
+def main():
+    natrium = int(input("Nátriumatom: "))
+    klor = int(input("Klóratom: "))
+    nacl = 0
+    excessNatrium = 0
+    excessKlor = 0
+
+    if natrium == klor:
+        nacl = klor
+    elif natrium > klor:
+        nacl = klor
+        excessNatrium = (natrium - klor)*2
+    else:
+        nacl = natrium
+        excessKlor = klor - natrium
+
+    print("Létrejött konyhasó: {0},\nmaradék nátriumatom: {1},\nmaradék klóratom: {2}".format(nacl, excessNatrium, excessKlor))
+
+if __name__ == "__main__":
+    main()
