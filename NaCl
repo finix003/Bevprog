@@ -5,16 +5,16 @@ def main():
     excessNatrium = 0
     excessKlor = 0
 
-    if natrium == klor:
-        nacl = klor
-    elif natrium > klor:
-        nacl = klor
-        excessNatrium = (natrium - klor)*2
-    else:
+    if natrium == klor * 2:
+        nacl = klor * 2
+    elif natrium > klor * 2:
+        nacl = klor * 2
+        excessNatrium = natrium - klor * 2
+    elif natrium < klor * 2:
+        excessKlor = klor * 2 - natrium
         nacl = natrium
-        excessKlor = klor - natrium
 
-    print("Létrejött konyhasó: {0},\nmaradék nátriumatom: {1},\nmaradék klóratom: {2}".format(nacl, excessNatrium, excessKlor))
+    print("Létrejött Nátrium-klorid: {0},\nmaradék nátriumatom: {1},\nmaradék klóratom: {2}".format(nacl, excessNatrium, excessKlor))
 
 if __name__ == "__main__":
     main()
