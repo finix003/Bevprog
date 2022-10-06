@@ -9,6 +9,6 @@ def decodC():
 def main():
     print("Kódolás\n")
     decodC()
-
+    print("Csodaszép zene!")
 if __name__ == "__main__":
-        main()
+    main()
