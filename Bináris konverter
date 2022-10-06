@@ -1,0 +1,15 @@
+def szavak(szo1, szo2):
+    print(szo2+" "+szo1, "\n")
+szo1 = input("Első szó:")
+szo2 = input("Második szó:")
+szavak(szo1, szo2)
+
+print("Bináris konverter\n")
+
+def Binaris_konverter(Szam):
+    if Szam > 1:
+        Bináris_konverter(Szam//2)
+        print(Szam % 2, end='')
+
+Szam = int(input("Addj meg egy decibális számot:"))
+Binaris_konverter(Szam)
